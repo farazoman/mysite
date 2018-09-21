@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+
+<link rel="stylesheet" href="index.css"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<nav>
+		<div id="header-banner"> 							<!--img overlay http://jsfiddle.net/sqJtr/ -->
+			<figure class="header-img"> 	<!--How to crop imgs : https://medium.com/@elad/how-to-crop-images-with-css-b8471d402b1 -->
+				<img src="./imgs/flowers.jpg">
+			</figure>
+			<img src="./imgs/logo.png" class="logo">
+		</div>
+
+	    <i class="nav-menu-toggle">dojob</i> <!--responsive navbar https://medium.freecodecamp.org/how-to-build-a-responsive-navbar-with-a-toggle-menu-using-flexbox-3438e1d08783 -->
+	    	
+		<div class="flex-container"> <!--DELETE flex-container class if it all works fine-->
+			<ul = class="nav-menu">
+			  <li class="nav-menu-item"><a href="default.asp">Home</a></li>
+			  <li class="nav-menu-item"><a href="news.asp">Projects</a></li>
+			  <li class="nav-menu-item"><a href="contact.asp">Publications & Graphics</a></li>
+			  <li class="nav-menu-item"><a href="about.asp">Professional</a></li>
+			</ul>
+		</div>
+
+	</nav>
+
+	<div id="page-content">
+		
+	</div>
+</body>
+
+
+
+
+
+<script type="text/javascript" src="./js/menuToggle.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+
+</html>
