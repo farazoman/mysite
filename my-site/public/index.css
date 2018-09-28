@@ -1,0 +1,89 @@
+
+/*START*********Navigation Bar***********/
+nav {
+	background: black;
+}
+
+/**********Nav Bar - Image********/
+#header-banner {
+	position: relative;
+	width: 100%;
+    height: 20%;
+}
+
+figure {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+figure img {
+	width:100%;
+	/*display: inline;*/
+}
+
+.header-img img {
+	margin: -27% 0;
+}
+
+.logo {
+	position: absolute;
+    bottom: 23%; /*TODO: How do I centre this overlayed picture?*/
+    right: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/*********Nav Bar - Nav Options***********/
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /*even spaced nav bar https://teamtreehouse.com/community/how-to-space-out-links-across-the-nav-bar */
+}
+
+.nav-menu-item {
+    padding: 20;
+}
+
+.nav-menu-item a {
+	text-decoration: none;
+    color: white;
+}
+
+/*TODO: what are these tag annotations???? they call it "media query"*/
+@media only screen and (max-width: 768px) {
+	ul {
+		flex-direction: column;
+	}
+	.nav-menu{
+		display: none;
+	}
+	.nav-menu-toggle {
+		margin: auto;
+		display: flex !important;
+		cursor: pointer;
+	}
+	.nav-menu-show {
+		display: flex;
+	}
+}
+
+.nav-menu-toggle {
+	filter: invert(100%);
+	height: 25px;
+	width: 50%;
+	display: none;
+
+}
+
+/*END*********Navigation Bar*****************/
+
+/*START************Home Page********************/
+.welcome {
+	text-align: center;
+	padding-top: 50px;
+}
